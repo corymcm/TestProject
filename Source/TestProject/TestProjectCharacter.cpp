@@ -14,8 +14,8 @@ ATestProjectCharacter::ATestProjectCharacter()
 	IsCurrentlyUsing(false),
 	BaseTurnRate(45.F),
 	BaseLookUpRate(45.F),
-	PlayerHealth(100.0f),
-	PlayerEngery(100.0f),
+	PlayerHealth(75.0f),
+	PlayerEngery(65.0f),
 	MaxHealth(100.0f),
 	MaxEngery(100.0f)
 {

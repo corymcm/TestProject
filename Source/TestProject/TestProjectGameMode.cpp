@@ -4,7 +4,6 @@
 #include "TestProjectGameMode.h"
 #include "TestProjectCharacter.h"
 #include "GameFramework/HUD.h"
-#include ""
 
 ATestProjectGameMode::ATestProjectGameMode()
 {
@@ -15,10 +14,9 @@ ATestProjectGameMode::ATestProjectGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 
-	static ConstructorHelpers::FClassFinder<UWidgetBlueprint> HUDBPClass(TEXT("/Game/Player_HUD.Player_HUD"));
+	static ConstructorHelpers::FClassFinder<AHUD> HUDBPClass(TEXT("/Game/PlayerHUD"));
 	if (HUDBPClass.Class != NULL)
 	{
 		HUDClass = HUDBPClass.Class;
-		//https://forums.unrealengine.com/showthread.php?86204-C-GameMode-with-Blueprint-HUD
 	}
 }
